@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-12 md:px-10">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div>
-            <Image src="/logo-wordmark.png" alt="Cadence Photography" width={240} height={58} className="h-10 w-auto brightness-0 invert" />
+            <Image src="/logo-wordmark.png" alt="Cadence Photography" width={281} height={58} className="h-10 w-auto brightness-0 invert" />
             <p className="mt-3 max-w-xs font-body text-sm text-paper/75">
               Real moments. Real connection. Portrait, event, and editorial
               photography based in Crossville, Tennessee.

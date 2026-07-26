@@ -54,7 +54,7 @@ export default function Nav() {
           onClick={() => setOpen(false)}
         >
           <Image src="/logo-mark.png" alt="" width={52} height={58} className="h-11 w-auto md:h-[52px]" priority />
-          <Image src="/logo-wordmark.png" alt="Cadence Photography" width={220} height={52} className="h-7 w-auto md:h-10" priority />
+          <Image src="/logo-wordmark.png" alt="Cadence Photography" width={252} height={52} className="h-7 w-auto md:h-10" priority />
         </Link>
 
         {/* Right cell: desktop right links / mobile spacer to balance the menu button */}
