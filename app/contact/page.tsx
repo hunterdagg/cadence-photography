@@ -28,7 +28,7 @@ export default function Contact() {
 
           <div className="cadence-reveal beat-4 mt-10 space-y-4 font-body text-sm text-charcoal/70">
             <p className="flex items-center gap-3">
-              <Mail size={16} className="text-brass" /> hello@cadencephotography.com
+              <Mail size={16} className="text-brass" /> cadencephotographytn@gmail.com
             </p>
             <p className="flex items-center gap-3">
               <InstagramGlyph /> @cadencephotography

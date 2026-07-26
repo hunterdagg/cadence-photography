@@ -44,7 +44,7 @@ export default function Footer() {
               </p>
               <ul className="mt-3 space-y-2 font-body text-sm text-paper/70">
                 <li>
-                  <a href="mailto:hello@cadencephotography.com" className="flex items-center gap-2 hover:text-paper">
+                  <a href="mailto:cadencephotographytn@gmail.com" className="flex items-center gap-2 hover:text-paper">
                     <Mail size={14} /> Email
                   </a>
                 </li>
