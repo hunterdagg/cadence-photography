@@ -3,10 +3,12 @@ import { ArrowRight } from "lucide-react";
 import PhotoFrame from "@/components/PhotoFrame";
 import Testimonial from "@/components/Testimonial";
 
+const exif = { shutter: "1/640", aperture: "f/4.5", iso: "320" };
+
 const featured = [
-  { label: "Golden Hour, No. 3", tone: "brass" as const, shutter: "1/200", aperture: "f/1.8", iso: "200" },
-  { label: "The Vows", tone: "olive" as const, shutter: "1/320", aperture: "f/2.8", iso: "400" },
-  { label: "Quiet Rooms", tone: "clay" as const, shutter: "1/125", aperture: "f/2.0", iso: "800" },
+  { label: "Duo, No. 1", src: "/portfolio/duo-1.jpg", aspect: "aspect-[2/3]", tone: "brass" as const, ...exif },
+  { label: "Solo Portrait, No. 2", src: "/portfolio/solo-portrait-2.jpg", aspect: "aspect-[2/3]", tone: "olive" as const, ...exif },
+  { label: "Solo Landscape, No. 1", src: "/portfolio/solo-landscape-1.jpg", aspect: "aspect-[3/2]", tone: "clay" as const, ...exif },
 ];
 
 const services = [

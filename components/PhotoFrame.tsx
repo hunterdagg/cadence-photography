@@ -1,7 +1,9 @@
+import Image from "next/image";
 import { Camera } from "lucide-react";
 
 type PhotoFrameProps = {
   label: string;
+  src?: string;
   aspect?: string;
   shutter?: string;
   aperture?: string;
@@ -18,6 +20,7 @@ const tones = {
 
 export default function PhotoFrame({
   label,
+  src,
   aspect = "aspect-[4/5]",
   shutter = "1/250",
   aperture = "f/2.0",
@@ -28,11 +31,21 @@ export default function PhotoFrame({
   return (
     <figure className={`group ${className}`}>
       <div
-        className={`relative ${aspect} w-full overflow-hidden rounded-sm bg-gradient-to-br ${tones[tone]} transition-transform duration-500 group-hover:scale-[1.02]`}
+        className={`relative ${aspect} w-full overflow-hidden rounded-sm ${src ? "bg-charcoal/5" : `bg-gradient-to-br ${tones[tone]}`} transition-transform duration-500 group-hover:scale-[1.02]`}
       >
-        <div className="absolute inset-0 flex items-center justify-center opacity-30">
-          <Camera size={40} strokeWidth={1} className="text-paper" />
-        </div>
+        {src ? (
+          <Image
+            src={src}
+            alt={label}
+            fill
+            sizes="(min-width: 768px) 33vw, 50vw"
+            className="object-cover"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center opacity-30">
+            <Camera size={40} strokeWidth={1} className="text-paper" />
+          </div>
+        )}
         <div className="absolute inset-0 bg-charcoal/0 transition-colors duration-300 group-hover:bg-charcoal/10" />
       </div>
       <figcaption className="mt-2 flex items-center justify-between font-mono text-[10px] tracking-wide text-charcoal/75">

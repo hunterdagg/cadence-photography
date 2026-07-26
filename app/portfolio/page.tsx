@@ -1,17 +1,18 @@
 import PhotoFrame from "@/components/PhotoFrame";
 
 const tones = ["brass", "olive", "clay"] as const;
+const exif = { shutter: "1/640", aperture: "f/4.5", iso: "320" };
 
 const gallery = [
-  { label: "Golden Hour, No. 1", shutter: "1/200", aperture: "f/1.8", iso: "200" },
-  { label: "The Reception", shutter: "1/160", aperture: "f/2.5", iso: "640" },
-  { label: "First Look", shutter: "1/320", aperture: "f/2.0", iso: "320" },
-  { label: "Studio Portrait, No. 4", shutter: "1/125", aperture: "f/4.0", iso: "100" },
-  { label: "Quiet Rooms II", shutter: "1/100", aperture: "f/2.0", iso: "800" },
-  { label: "The Vows", shutter: "1/320", aperture: "f/2.8", iso: "400" },
-  { label: "Anniversary Session", shutter: "1/250", aperture: "f/3.5", iso: "200" },
-  { label: "Golden Hour, No. 2", shutter: "1/200", aperture: "f/1.8", iso: "200" },
-  { label: "Family, Front Porch", shutter: "1/200", aperture: "f/2.8", iso: "160" },
+  { label: "Duo, No. 1", src: "/portfolio/duo-1.jpg", aspect: "aspect-[2/3]", ...exif },
+  { label: "Duo, No. 2", src: "/portfolio/duo-2.jpg", aspect: "aspect-[2/3]", ...exif },
+  { label: "Duo, No. 3", src: "/portfolio/duo-3.jpg", aspect: "aspect-[2/3]", ...exif },
+  { label: "Solo Portrait, No. 1", src: "/portfolio/solo-portrait-1.jpg", aspect: "aspect-[2/3]", ...exif },
+  { label: "Solo Portrait, No. 2", src: "/portfolio/solo-portrait-2.jpg", aspect: "aspect-[2/3]", ...exif },
+  { label: "Solo Portrait, No. 3", src: "/portfolio/solo-portrait-3.jpg", aspect: "aspect-[2/3]", ...exif },
+  { label: "Solo Landscape, No. 1", src: "/portfolio/solo-landscape-1.jpg", aspect: "aspect-[3/2]", ...exif },
+  { label: "Solo Landscape, No. 2", src: "/portfolio/solo-landscape-2.jpg", aspect: "aspect-[3/2]", ...exif },
+  { label: "Solo Landscape, No. 3", src: "/portfolio/solo-landscape-3.jpg", aspect: "aspect-[3/2]", ...exif },
 ];
 
 export default function Portfolio() {
@@ -34,6 +35,8 @@ export default function Portfolio() {
           <PhotoFrame
             key={photo.label}
             label={photo.label}
+            src={photo.src}
+            aspect={photo.aspect}
             shutter={photo.shutter}
             aperture={photo.aperture}
             iso={photo.iso}
@@ -41,10 +44,6 @@ export default function Portfolio() {
           />
         ))}
       </div>
-
-      <p className="mt-14 text-center font-mono text-xs uppercase tracking-widest text-charcoal/75">
-        These frames are placeholders — swap in real galleries from the CMS.
-      </p>
     </section>
   );
 }
