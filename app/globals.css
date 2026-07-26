@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light only;
+  --color-charcoal: #34342a;
+  --color-olive-mid: #79786f;
+  --color-paper: #f8f6f1;
+  --color-paper-dim: #eceae5;
+  --color-brass: #6d4929;
+  --color-brass-light: #947961;
+  --color-clay: #d1c6b9;
+}
+
+@theme inline {
+  --color-charcoal: var(--color-charcoal);
+  --color-olive-mid: var(--color-olive-mid);
+  --color-paper: var(--color-paper);
+  --color-paper-dim: var(--color-paper-dim);
+  --color-brass: var(--color-brass);
+  --color-brass-light: var(--color-brass-light);
+  --color-clay: var(--color-clay);
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--color-brass);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 3px;
+}
+
+/* Cadence reveal: staggered rhythmic fade, mimics a 4-beat measure with
+   accented downbeats, not a uniform linear stagger. */
+.cadence-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: cadence-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes cadence-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.beat-1 { animation-delay: 0ms; }
+.beat-2 { animation-delay: 90ms; }
+.beat-3 { animation-delay: 260ms; }
+.beat-4 { animation-delay: 340ms; }
