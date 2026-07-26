@@ -31,9 +31,9 @@ export default function About() {
           </h1>
           <div className="cadence-reveal beat-4 mt-6 space-y-4 font-body text-charcoal/70">
             <p>
-              Cadence Photography is a freelance studio based in Crossville,
-              Tennessee, working with couples, families, and small
-              gatherings throughout the surrounding area.
+              Cadence Photography is freelance photography based in
+              Crossville, Tennessee, working with couples, families, and
+              small gatherings throughout the surrounding area.
             </p>
             <p>
               By day, I do graphic design and media work for a marketing
