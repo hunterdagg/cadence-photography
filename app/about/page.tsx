@@ -36,10 +36,19 @@ export default function About() {
               gatherings throughout the surrounding area.
             </p>
             <p>
-              Replace this paragraph with a real bio — how you got started,
-              what draws you to photographing couples and families, and
-              what people can expect working with you. Two or three short
-              paragraphs is plenty.
+              By day, I do graphic design and media work for a marketing
+              agency here on the Plateau — brand decks, campaign assets,
+              deadlines. Photographing couples and families is the opposite
+              of that: no client brief, no strategy meeting, just people
+              showing up as themselves for an hour.
+            </p>
+            <p>
+              I studied marketing at the University of Georgia, which is
+              honestly where the eye for composition and story came from —
+              I just prefer pointing it at a kid who won&apos;t look at the
+              camera over a quarterly campaign. I&apos;ve called the
+              Cumberland Plateau home since 2014, and most sessions happen
+              within a short drive of Crossville.
             </p>
           </div>
         </div>
