@@ -89,6 +89,22 @@ export default function ContactForm() {
       </div>
 
       <div>
+        <label htmlFor="sessionLength" className="font-mono text-xs uppercase tracking-widest text-charcoal/75">
+          Session length
+        </label>
+        <select
+          id="sessionLength"
+          name="sessionLength"
+          className="mt-2 w-full rounded-sm border border-charcoal/20 bg-paper px-4 py-3 font-body text-charcoal outline-none focus-visible:border-brass"
+        >
+          <option>30 to 45 minutes (Mini Session)</option>
+          <option>Up to 90 minutes (Full Session)</option>
+          <option>Full day (Event Coverage)</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+
+      <div>
         <label htmlFor="message" className="font-mono text-xs uppercase tracking-widest text-charcoal/75">
           Message
         </label>
