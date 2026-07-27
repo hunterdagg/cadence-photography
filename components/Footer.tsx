@@ -49,7 +49,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-paper">
+                  <a href="https://instagram.com/cadencephotographytn" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-paper">
                     <InstagramGlyph /> Instagram
                   </a>
                 </li>
