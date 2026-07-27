@@ -31,17 +31,14 @@ export default function Contact() {
             <p className="flex items-center gap-3">
               <Mail size={16} className="text-brass" /> cadencephotographytn@gmail.com
             </p>
-            <p className="flex items-center gap-3">
-              <InstagramGlyph />
-              <a
-                href="https://instagram.com/cadencephotographytn"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-brass"
-              >
-                @cadencephotographytn
-              </a>
-            </p>
+            <a
+              href="https://instagram.com/cadencephotographytn"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-3 hover:text-brass"
+            >
+              <InstagramGlyph /> @cadencephotographytn
+            </a>
             <p className="flex items-center gap-3">
               <MapPin size={16} className="text-brass" /> Crossville, TN
             </p>
