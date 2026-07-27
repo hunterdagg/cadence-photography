@@ -13,12 +13,13 @@ export default function About() {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-start md:gap-16">
         <div className="cadence-reveal beat-1">
           <PhotoFrame
-            label="Studio Portrait, Founder"
-            aspect="aspect-[3/4]"
+            label="Cadence"
+            src="/about-founder.jpg"
+            aspect="aspect-[3/5]"
             tone="olive"
-            shutter="1/160"
-            aperture="f/2.0"
-            iso="200"
+            shutter="1/3000"
+            aperture="f/1.8"
+            iso="100"
           />
         </div>
 
