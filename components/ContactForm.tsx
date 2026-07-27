@@ -38,7 +38,7 @@ export default function ContactForm() {
       <div className="rounded-sm border border-charcoal/20 px-6 py-10 text-center">
         <p className="font-display text-xl italic text-charcoal">Message sent.</p>
         <p className="mt-2 font-body text-sm text-charcoal/70">
-          Thanks for reaching out — I typically reply within 1–2 business days.
+          Thanks for reaching out. I typically reply within 1 to 2 business days.
         </p>
       </div>
     );
@@ -110,7 +110,7 @@ export default function ContactForm() {
       </button>
       {status === "error" && (
         <p className="font-mono text-[11px] text-red-700">
-          Something went wrong sending that — try again, or email directly.
+          Something went wrong sending that. Try again, or email directly.
         </p>
       )}
     </form>

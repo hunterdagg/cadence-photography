@@ -5,18 +5,18 @@ import Testimonial from "@/components/Testimonial";
 const packages = [
   {
     name: "Mini Session",
-    price: "$75–$150",
-    unit: "30–45 minutes",
+    price: "$75 to $150",
+    unit: "30 to 45 minutes",
     outcome:
-      "A quick, focused session — perfect for a fast family update, a couple wanting a few real shots, or a first session together before committing to more.",
+      "A quick, focused session: perfect for a fast family update, a couple wanting a few real shots, or a first session together before committing to more.",
     featured: false,
   },
   {
     name: "Full Session",
-    price: "$150–$250",
+    price: "$150 to $250",
     unit: "up to 90 minutes",
     outcome:
-      "Room to actually settle in — multiple looks or locations, and enough time that the posed feeling fades and the real one shows up.",
+      "Room to actually settle in: multiple looks or locations, and enough time that the posed feeling fades and the real one shows up.",
     featured: true,
   },
   {
@@ -24,7 +24,7 @@ const packages = [
     price: "Custom quote",
     unit: "weddings & gatherings",
     outcome:
-      "For the day itself — coverage built around your timeline so nothing important goes undocumented.",
+      "For the day itself: coverage built around your timeline so nothing important goes undocumented.",
     featured: false,
   },
 ];
@@ -40,7 +40,7 @@ export default function Pricing() {
       </h1>
       <p className="cadence-reveal beat-3 mt-4 max-w-xl font-body text-charcoal/70">
         I&rsquo;m currently building out the portfolio, so these rates are
-        lower than where they&rsquo;ll land long-term. Book now to lock in
+        lower than where they&rsquo;ll eventually land. Book now to lock in
         the introductory pricing.
       </p>
 
@@ -80,7 +80,7 @@ export default function Pricing() {
 
       <div className="mt-20 max-w-xl">
         <Testimonial
-          quote="Worth every bit of the drive out — she found light in our backyard I didn't know was there."
+          quote="Worth every bit of the drive out. She found light in our backyard I didn't know was there."
           name="Placeholder client"
           context="Full session"
         />

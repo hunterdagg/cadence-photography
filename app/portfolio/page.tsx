@@ -25,7 +25,7 @@ export default function Portfolio() {
         A contact sheet of recent sessions.
       </h1>
       <p className="cadence-reveal beat-3 mt-4 max-w-xl font-body text-charcoal/70">
-        Every frame here is shown with the settings behind it — a small
+        Every frame here is shown with the settings behind it: a small
         window into how the shot came together. Full galleries available on
         request.
       </p>

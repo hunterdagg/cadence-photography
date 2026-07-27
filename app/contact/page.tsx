@@ -24,7 +24,7 @@ export default function Contact() {
           </h1>
           <p className="cadence-reveal beat-3 mt-4 max-w-md font-body text-charcoal/70">
             Tell me about the date, the people, and the story you want told.
-            I typically reply within 1–2 business days.
+            I typically reply within 1 to 2 business days.
           </p>
 
           <div className="cadence-reveal beat-4 mt-10 space-y-4 font-body text-sm text-charcoal/70">

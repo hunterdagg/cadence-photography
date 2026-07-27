@@ -9,7 +9,7 @@ const posts = [
     tone: "brass" as const,
   },
   {
-    title: "Behind a rainy-day backyard wedding",
+    title: "Behind a rainy day backyard wedding",
     excerpt: "How a rainy forecast turned into the best light of the whole day.",
     date: "May 2026",
     tone: "olive" as const,
@@ -48,7 +48,7 @@ export default function Blog() {
       </div>
 
       <p className="mt-14 text-center font-mono text-xs uppercase tracking-widest text-charcoal/75">
-        These are placeholder posts — real entries will come from the CMS.
+        These are placeholder posts. Real entries will come from the CMS.
       </p>
     </section>
   );

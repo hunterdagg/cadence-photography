@@ -13,8 +13,8 @@ const featured = [
 
 const services = [
   { title: "Couples", copy: "Engagement sessions and anniversary shoots that feel like the two of you, not a staged shot." },
-  { title: "Family", copy: "Portraits that hold up on the wall for years — no forced smiles, just how your family actually is together." },
-  { title: "Events", copy: "Weddings, receptions, and milestone gatherings — documented without getting in the way of the day." },
+  { title: "Family", copy: "Portraits that hold up on the wall for years. No forced smiles, just how your family actually is together." },
+  { title: "Events", copy: "Weddings, receptions, and milestone gatherings, documented without getting in the way of the day." },
 ];
 
 export default function Home() {
@@ -24,14 +24,14 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-16 md:px-10 md:pb-24 md:pt-24">
         <div className="cadence-reveal beat-1">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-brass">
-            Couples &amp; Family Photography — Crossville, TN
+            Couples &amp; Family Photography, Crossville, TN
           </p>
         </div>
         <h1 className="cadence-reveal beat-2 mt-6 max-w-3xl font-display text-5xl leading-[1.05] tracking-tight text-charcoal md:text-7xl">
           Real moments. <span className="italic text-brass">Real connection.</span>
         </h1>
         <p className="cadence-reveal beat-3 mt-6 max-w-xl font-body text-lg text-charcoal/70">
-          Photography for couples, families, and the milestones in between —
+          Photography for couples, families, and the milestones in between:
           images that hold up because they're actually you, not a
           performance of you.
         </p>
@@ -85,7 +85,7 @@ export default function Home() {
       {/* Testimonial */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:px-10">
         <Testimonial
-          quote="She made an hour with a squirmy toddler and two tired parents feel completely relaxed — and somehow every photo still looks like us."
+          quote="She made an hour with a squirmy toddler and two tired parents feel completely relaxed, and somehow every photo still looks like us."
           name="Placeholder client"
           context="Family session"
         />

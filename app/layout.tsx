@@ -26,7 +26,7 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Cadence Photography",
   description:
-    "Cadence Photography — real moments, real connection. Couples, family, and event photography in Crossville, TN.",
+    "Cadence Photography: real moments, real connection. Couples, family, and event photography in Crossville, TN.",
   other: {
     "color-scheme": "light",
   },

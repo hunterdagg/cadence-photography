@@ -3,8 +3,8 @@ import Testimonial from "@/components/Testimonial";
 
 const values = [
   { title: "Unhurried", copy: "Kids need a minute to warm up, and couples need a minute to stop posing. I build that time into every session." },
-  { title: "Honest light", copy: "Natural light first, always. Editing supports the moment — it doesn't replace it." },
-  { title: "No forced smiles", copy: "The real ones show up in the in-between moments, not on command. That's what I'm actually shooting for." },
+  { title: "Honest light", copy: "Natural light first, always. Editing supports the moment. It doesn't replace it." },
+  { title: "No forced smiles", copy: "The real ones show up in the moments between poses, not on command. That's what I'm actually shooting for." },
 ];
 
 export default function About() {
@@ -13,7 +13,7 @@ export default function About() {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-start md:gap-16">
         <div className="cadence-reveal beat-1">
           <PhotoFrame
-            label="Studio Portrait — Founder"
+            label="Studio Portrait, Founder"
             aspect="aspect-[3/4]"
             tone="olive"
             shutter="1/160"
@@ -56,7 +56,7 @@ export default function About() {
 
       <div className="mt-16 max-w-xl">
         <Testimonial
-          quote="She got our whole extended family — including the toddlers — smiling in the same photo. Still not sure how."
+          quote="She got our whole extended family, including the toddlers, smiling in the same photo. Still not sure how."
           name="Placeholder client"
           context="Family session"
           variant="light"

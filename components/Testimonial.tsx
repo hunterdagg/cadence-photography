@@ -31,7 +31,7 @@ export default function Testimonial({
         }`}
       >
         {name}
-        {context ? ` — ${context}` : ""}
+        {context ? `, ${context}` : ""}
       </figcaption>
     </figure>
   );
