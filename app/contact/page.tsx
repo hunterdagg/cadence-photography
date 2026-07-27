@@ -1,4 +1,5 @@
 import { Mail, MapPin } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 function InstagramGlyph() {
   return (
@@ -39,73 +40,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className="space-y-5">
-          <div>
-            <label htmlFor="name" className="font-mono text-xs uppercase tracking-widest text-charcoal/75">
-              Name
-            </label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              required
-              className="mt-2 w-full rounded-sm border border-charcoal/20 bg-transparent px-4 py-3 font-body text-charcoal outline-none focus-visible:border-brass"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="email" className="font-mono text-xs uppercase tracking-widest text-charcoal/75">
-              Email
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              className="mt-2 w-full rounded-sm border border-charcoal/20 bg-transparent px-4 py-3 font-body text-charcoal outline-none focus-visible:border-brass"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="sessionType" className="font-mono text-xs uppercase tracking-widest text-charcoal/75">
-              Session type
-            </label>
-            <select
-              id="sessionType"
-              name="sessionType"
-              className="mt-2 w-full rounded-sm border border-charcoal/20 bg-paper px-4 py-3 font-body text-charcoal outline-none focus-visible:border-brass"
-            >
-              <option>Couples session</option>
-              <option>Family session</option>
-              <option>Event coverage</option>
-              <option>Something else</option>
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="message" className="font-mono text-xs uppercase tracking-widest text-charcoal/75">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={5}
-              required
-              className="mt-2 w-full rounded-sm border border-charcoal/20 bg-transparent px-4 py-3 font-body text-charcoal outline-none focus-visible:border-brass"
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="w-full rounded-sm bg-charcoal px-6 py-3 font-body text-sm text-paper transition-colors hover:bg-brass"
-          >
-            Send message
-          </button>
-          <p className="font-mono text-[11px] text-charcoal/75">
-            Form isn&rsquo;t wired up yet — connect it to Formspree, a Sanity
-            mutation, or an email API before launch.
-          </p>
-        </form>
+        <ContactForm />
       </div>
     </section>
   );
